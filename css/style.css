@@ -72,6 +72,11 @@ nav {
   margin-top:90px;
   text-align:center;
   font-size:0px;
+  -moz-user-select:none; 
+  -webkit-user-select:none; 
+  -ms-user-select:none; 
+  -o-user-select:none;
+  user-select:none;  
 }
 
 nav a {
