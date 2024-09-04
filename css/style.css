@@ -1,8 +1,17 @@
 
+:root {
+  --purple: rgb(158, 39, 154);
+  --purple-highlight: rgb(221, 24, 215);
+  --black-text: rgb(120, 120, 120);
+  --blackest-text: rgb(54,54,54);
+  --background: rgb(253, 253, 253);
+}
+
+
 body {
   height: 100vh;
   margin: 0;
-  background-color: rgb(253, 253, 253);
+  background-color: var(--background);
 }
 
 section {
@@ -21,36 +30,33 @@ section {
       padding: 0.6rem 1.2rem;
       text-decoration: none;
       border-radius: 5rem;
-  
-      border: 0.1rem solid  rgb(158, 39, 154);
-      color: rgb(158, 39, 154);
+      border: 0.1rem solid var(--purple);
+      color: var(--purple);
       font-family: 'Open-Sans', sans-serif;
       font-size: 0.8rem;
   }
 
   .button:hover {
-    border: 0.1rem solid rgb(221, 24, 215);
-    color: rgb(221, 24, 215);
+    border-color: var(--purple-highlight);
+    color: var(--purple-highlight);
   }
-  
 }
 
 
 .big {
+  color: var(--blackest-text);
+
   font-family: 'DM-Sans', sans-serif;
   font-size: 5rem;
   line-height: 4.2rem;
   font-weight: 400;
   letter-spacing: -0.3rem;
   text-transform: uppercase;
-      
-  color: rgb(54, 54, 54);
 }
 
 .small {
   margin-top: 2.5rem;
-  
-  color: rgb(120, 120, 120);
+  color: var(--black-text);
 
   font-family: 'Open Sans', sans-serif;
   font-size: 1.2rem;
@@ -63,14 +69,13 @@ section {
 }
 
 a {
-  color: rgb(120, 120, 120);
   text-decoration: none;
   font-weight: 600;
-  color: rgb(158, 39, 154)  
+  color: var(--purple);
 }
 
 a:hover {
-  color: rgb(221, 24, 215); 
+  color: var(--purple-highlight);
 }
 
 /* On mobile, reduce margins and fontsize */
