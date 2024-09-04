@@ -1,105 +1,66 @@
-/* CSS sanity */
-html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:"";content:none}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #dedede;margin:0;padding:0}input,select{vertical-align:middle}a:hover,a:active{outline:none}label,input[type="submit"]{cursor:pointer}input,textarea{margin:0}
-ul{list-style:none;}
-a{color:#2f2f2f;outline:none;text-decoration:none;}
-img{border:none;text-decoration:none;max-width:100%;height:auto;}
-input{outline:none;border:none;margin:0;padding:0;}
-strong {font-weight:normal !important;}
-
-/* Default selection colors */
-::-webkit-selection{background-color:red;color:white;}
-::-moz-selection{background-color:red;color:white;}
-::-o-selection{background-color:red;color:white;}
-::-ms-selection{background-color:red;color:white;}
-::selection{background-color:red;color:white;}
-
 
 body {
-  background-color:#fff;
-  font-size:17px;
-  line-height:19px;
-  color:#111;
-  height:100%;
-  font-family: 'Fira Mono', monospace;  
-  letter-spacing:6px;
-  text-rendering: optimizeLegibility;
-  text-transform:uppercase;
+  height: 100vh;
+  margin: 0;
+  background-color: rgb(253, 253, 253);
 }
 
-h1 {
-  font-family: monospace, sans-serif;
-  font-weight: 900;
-  font-stretch: ultra-condensed;
-  font-size: 30px;
-  margin-top: 10px;
-  margin-bottom: 30px;
-  line-height: 40px;
-  border-bottom: 2px solid black;
-  letter-spacing: 1px;
-}
+section {
+  padding: 1rem 5rem;
 
-h2 {
-  letter-spacing: 1px;
-}
-
-h3 {
-  font-size: 80%;
-  letter-spacing: 4px;
-}
-
-.content {
-  margin-left: 30px; 
-  margin-top: 50px; 
-  display: inline-block
-}
-
-@media only screen and (max-width : 768px) {
-  .content {
-    margin-left: 10px;
+  &:first-child {
+      padding-top: 6rem;
   }
+}
 
-  h3 {
-    font-size: 60%;
-  }
+.contact {
+  position: absolute;
+  top: 2rem;
+  right:  2rem;
+
+  .button {
+      padding: 0.6rem 1.2rem;
+      text-decoration: none;
+      border-radius: 5rem;
   
-  .hide-sm {
-    display: none;
+      border: 0.1rem solid  rgb(158, 39, 154);
+      color:  r rgb(158, 39, 154);
+      font-family: 'Open-Sans', sans-serif;
+      font-size: 0.8rem;
   }
 }
 
+  
 
-nav {
-  position:relative;
-  display:block;
-  margin-top:90px;
-  text-align:center;
-  font-size:0px;
-  -moz-user-select:none; 
-  -webkit-user-select:none; 
-  -ms-user-select:none; 
-  -o-user-select:none;
-  user-select:none;  
+.big {
+  font-family: 'DM-Sans', sans-serif;
+  font-size: 5rem;
+  line-height: 4.2rem;
+  font-weight: 400;
+  letter-spacing: -0.3rem;
+  text-transform: uppercase;
+      
+  color: rgb(54, 54, 54);
 }
 
-nav a {
-  position:relative;
-  display:inline-block !important;
-  margin:0 0px;
-  font-size:22px;
-  color:gray;
+.small {
+  margin-top: 2.5rem;
+  
+  color: rgb(120, 120, 120);
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  letter-spacing: -0.01rem;
 }
 
-nav a.twitter:hover,
-nav a.twitter:focus {
-	color:#8ae0fc;
+a {
+  color: rgb(120, 120, 120);
+  text-decoration: none;
+  font-weight: 600;
+  color: rgb(158, 39, 154)  
 }
 
-nav a.github:hover,
-nav a.github:focus {  
-	color: black;   
-}
-
-nav a.linkedin:hover,
-nav a.linkedin:focus {
-	color:#007bb5;
+a:hover {
+  color: rgb(221, 24, 215); 
 }
